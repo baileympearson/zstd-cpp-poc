@@ -1,0 +1,7 @@
+zstd
+build
+.vscode
+
+node_modules
+deps
+.DS_Store

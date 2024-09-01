@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "chai": "^4.5.0",
+    "node-addon-api": "^8.1.0"
+  },
+  "devDependencies": {
+    "@mongodb-js/zstd": "^1.2.0"
+
+  },
+  "scripts": {
+    "preinstall": "bash install-zstd.sh",
+    "prepare": "npm run compile",
+    "compile": "node-gyp rebuild",
+    "test": "node index.test.js"
+  },
+  "binary": {
+    "napi_versions": [
+      7
+    ]
+  }
+}
